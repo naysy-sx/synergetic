@@ -1,0 +1,72 @@
+@layer theme {
+
+
+    :root {
+        --color-light: #fff;
+        --color-primary: #030306;
+        --color-secondary: #03030680;
+        --color-accent: #B0D934;
+        --color-accent-light: rgba(176, 217, 52, 0.25);
+        --color-border: rgba(239, 239, 239, 1);
+        --button-color-gray: rgba(245, 245, 245, 1);
+        --button-color-blue: rgba(48, 134, 239, 1);
+        --font-family-intro: 'Druk Cy TT';
+        --font-family-body: 'Golos Text';
+        --font-size: clamp(0.875rem, 0.7857rem + 0.2857vw, 1rem);
+        --button-fon-size: 14px;
+    }
+
+    .theme {
+        font-family: var(--font-family-body);
+        font-size: var(--font-size);
+        line-height: 1.2;
+        letter-spacing: -2%;
+    }
+
+    .intro-title {
+        font-family: var(--font-family-intro);
+        color: var(--color-light);
+        line-height: 1;
+    }
+
+    .intro-title-1 {
+        font-size: 220px;
+        font-size: clamp(7.5rem, 3.0357rem + 14.2857vw, 13.75rem);
+        /* 220 до 120*/
+
+    }
+
+    .intro-title-2 {
+        font-size: 180px;
+        font-size: clamp(4.375rem, -0.5357rem + 15.7143vw, 11.25rem);
+        /* 180 до 69*/
+    }
+
+    .theme h1,
+    .theme h2,
+    .theme h3 {
+        line-height: 1.2;
+        font-weight: 600;
+    }
+
+
+    .theme h1 {
+        font-size: 48px;
+        font-size: clamp(2rem, 1.2857rem + 2.2857vw, 3rem);
+        /* 48 до 32*/
+    }
+
+    .theme h2 {
+        font-size: 48px;
+        font-size: clamp(2rem, 1.2857rem + 2.2857vw, 3rem);
+        /* 48 до 32*/
+
+
+    }
+
+    .theme h3 {
+        font-size: 24px;
+        font-size: clamp(1.25rem, 1.0714rem + 0.5714vw, 1.5rem);
+        /* 24 до 20*/
+    }
+}

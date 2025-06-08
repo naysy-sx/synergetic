@@ -1,10 +1,12 @@
-@layer reset, animate, modal, base, elements, sections, utilities;
+@layer reset, animate, modal, fonts, base, theme, elements, sections, utilities;
 
 
 @import url('./reset.css') layer(reset);
 @import url('./animate.min.css') layer(animate);
 @import url('./modal.css') layer(modal);
+@import url('../fonts/stylesheet.css') layer(fonts);
 @import url('./base.css') layer(base);
+@import url('./theme.css') layer(theme);
 @import url('./elements.css') layer(elements);
 @import url('./sections.css') layer(sections);
 @import url('./utilities.css') layer(utilities);
