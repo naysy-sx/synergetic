@@ -35,7 +35,8 @@
         font-family: var(--font-family-body);
         font-size: var(--font-size);
         line-height: 1.2;
-        letter-spacing: -2%;
+        letter-spacing: -0.2px;
+        padding: 0;
     }
 
     .intro-title {

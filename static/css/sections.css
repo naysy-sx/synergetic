@@ -1,1 +1,8 @@
-@layer sections {}
+@layer sections {
+    .intro {
+        margin: 0;
+        padding: 0;
+    }
+
+
+}
