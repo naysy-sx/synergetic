@@ -45,26 +45,622 @@
 </head>
 
 <body class="theme">
-	<h1 class="intro-title">Всем привет!</h1>
-	<h2>Заголовок 2</h2>
-	<h3>Заголовок 3</h3>
 
-	<input type="tel" placeholder="Телефон">
+	<!-- HEADER -->
+
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a href="/" class="header__logo">
+					<img src="/static/img/logo.svg" alt="Synergetic">
+				</a>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="#how" class="header__nav-link">
+								<span>Как участвовать?</span>
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link">
+								<span>Призы</span>
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link">
+								<span>Правила акции</span>
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link">
+								<span>Где купить?</span>
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link">
+								<span>Победители</span>
+							</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/" class="header__nav-link">
+								<span>Вопросы</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="card-buttons">
+					<a href="" class="btn --primary">
+						<b class="icon-squares"></b>
+					</a>
+					<a href="" class="btn --primary">
+						<span>Загрузить чек</span>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<!-- /HEADER -->
+
+
+
+	<!-- MAIN -->
+
+	<main class="main">
+		<!-- INTRO -->
+		<section class="intro" id="intro">
+			<img src="/static/img/intro.png" alt="Фон секции">
+			<div class="container">
+				<div class="intro-layout">
+
+					<img src="/static/img/airplane.png" alt="Самолёт">
+					<h1 class="intro-title">
+						<span class="intro-title-top">Выйграй 300 000 ₽</span>
+						<span class="intro-title-bottom">на путешествие мечты</span>
+					</h1>
+					<p class="intro-text">Кондиционер — в корзину. Чек — в бот. Путешествие — за вами.</p>
+					<a href="/" class="button --large">
+						<span>Хочу в отпуск</span>
+						<b class="icon-airplane"></b>
+					</a>
+				</div>
+				<img src="/static/img/mascote.svg" alt="">
+			</div>
+		</section>
+		<!-- /INTRO -->
+
+		<section class="decor text-center">
+			<!-- 2. HOW -->
+			<section class="section how">
+				<div class="container">
+					<header class="section-header">
+						<p class="section-mark">Как принять участие?</p>
+						<h2 class="section-title">Участвовать проще, чем выбрать <span>аромат</span></h2>
+					</header>
+
+					<div class="section-body">
+						<ul class="products flex">
+							<li class="products-item">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-2-1.png" alt="">
+											</span>
+											<figcaption>
+												<h3>Покупайте кондиционер</h3>
+												<p>Aroma Emotions — в любом магазине, онлайн или офлайн </p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons">
+										<a href="" class="btn --success">
+											<b class="icon-check"></b>
+										</a>
+										<a href="" class="btn --success">
+											<span>Где можно купить?</span>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="products-item">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-2-2.png" alt="">
+											</span>
+											<figcaption>
+												<h3>Загружайте чек</h3>
+												<p>в наш чат-бот — быстро, удобно, за 30 секунд</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons">
+										<a href="" class="btn --success">
+											<b class="icon-check-2"></b>
+										</a>
+										<a href="" class="btn --success">
+											Как загрузить чек с маркетплейса?
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="products-item">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-2-3.png" alt="">
+											</span>
+											<figcaption>
+												<h3>Выигрывайте призы</h3>
+												<p>Эмоции не ждут: разыгрываем подарки каждый месяц</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons">
+										<a href="" class="btn --success">
+											<b class="icon-bonus"></b>
+										</a>
+										<a href="" class="btn --success">
+											Какие призы можно выиграть?
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<footer class="section-footer">
+						<a href="#" class="button --middle">
+							<span>Загрузить чек</span>
+							<b class="icon-squares"></b>
+						</a>
+					</footer>
+
+				</div>
+			</section>
+			<!-- /2. HOW -->
+
+
+
+
+			<!-- 3. EMOTIONS -->
+			<section class="section emotions">
+				<header class="section-header">
+					<img class="sticker --top --right" src="/static/img/sticker-1.svg" alt="">
+					<p class="section-mark">Покупай и выигрывай?</p>
+					<h2 class="section-title"><span>Эмоции</span> начинаются с аромата </h2>
+					<p>Aroma Emotions — новинка в линейке парфюмированных кондиционеров, вдохновлённая атмосферой разных уголков
+						мира. Каждый аромат превращает стирку в путешествие, даря белью мягкость и яркий аромат.</p>
+					<img class="sticker --bottom --left" src="/static/img/sticker-2.svg" alt="">
+				</header>
+
+				<div class="section-body">
+					<div class="products-slider">
+						<ul class="products flex">
+							<li class="products-item">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-1.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Италия</small>
+												<h3>Cherry</h3>
+												<p>Спелая вишня / Сандал / Ваниль</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="products-item">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-2.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Куба</small>
+												<h3>Tobacco Vanille</h3>
+												<p>Ваниль / Листья табака / Бергамот</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="products-item">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-3.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Япония</small>
+												<h3>Pear & Jasmine</h3>
+												<p>Цветущий миндаль / Груша / Жасмин</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="products-item">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-4.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Мальдивы</small>
+												<h3>Sea Kiss</h3>
+												<p>Мята / Иланг-иланг / Малина</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</li>
+							<li class="products-item">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-5.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Мальдивы</small>
+												<h3>Flower Delight</h3>
+												<p>Фрезия / Палисандр / Бергамот</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</section>
+			<!-- /3. EMOTIONS SLIDER -->
+
+		</section>
+		<!-- 4. Main prize -->
+		<section class="section main-prize text-center">
+			<img src="/static/img/section-4-bg.png" alt="">
+			<div class="container">
+				<header class="section-header">
+					<p class="section-mark">Главный приз</p>
+				</header>
+				<footer class="section-footer">
+					<a href="#" class="button --middle">
+						<span>Загрузить чек</span>
+						<b class="icon-airplane"></b>
+					</a>
+				</footer>
+			</div>
+		</section>
+		<!-- /4. Main prize -->
+		<!-- 5. also -->
+		<section class="section also text-center">
+			<div class="container">
+				<header class="section-header">
+					<h2 class="section-title"><span>А ещё.. </span></h2>
+				</header>
+				<div class="section-body">
+					<div class="also-row flex">
+						<div class="also-item --first">
+							<div class="also-card">
+								<img src="/static/img/also-4.png" alt="">
+								<img src="/static/img/also-2.png" alt="">
+								<img src="/static/img/also-3.png" alt="">
+
+								<div class="card-buttons">
+									<a href="" class="btn --light-gray">
+										<span>Загрузить чек</span>
+									</a>
+									<a href="" class="btn --light-gray">
+										<b class="icon-check"></b>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="also-item --second">
+							<img src="/static/img/section-5-2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- /5. also -->
+
+		<!-- 6. Winners -->
+		<section class="section winners text-center">
+			<div class="container">
+				<header class="section-header">
+					<img class="sticker --top --right" src="/static/img/sticker-1.svg" alt="">
+					<p class="section-mark">Победители</p>
+					<h2 class="section-title"><span>Присоединяйся</span> к нашим победителям</h2>
+				</header>
+
+				<ul class="winners-list flex">
+					<li class="winners-item">
+						<div class="winners-card">
+							<div class="figure-1">
+								<b>3708</b><br>
+								Количество победителей
+							</div>
+							<img src="/static/img/section-6-1.png" alt="">
+						</div>
+					</li>
+					<li class="winners-item">
+						<div class="winners-card">
+							<img src="/static/img/section-6-2.png" alt="">
+							<div class="figure-2">
+								<b>50 000 000 ₽</b><br>
+								Сумма всех разыгранных призов
+							</div>
+						</div>
+					</li>
+				</ul>
+				<ul class="winners-list flex">
+					<li class="winners-item">
+						<div class="winners-card">
+							<div class="figure-3">
+								<h3>Осталось до розыгрыша:</h3>
+								TIMER
+							</div>
+							<div class="figure-4">
+								<img src="/static/img/section-7-2.png" alt="">
+								<h3>Переходи в Telegram и загружай чек — <span>разыгрываем призы каждый месяц</span></h3>
+								<div class="card-buttons">
+									<a href="" class="btn --light-blue">
+										<span>Загрузить чек</span>
+									</a>
+									<a href="" class="btn --light-blue">
+										<b class="icon-squares-blue"></b>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="winners-item">
+						<div class="winners-card">
+							<div class="figure-5">
+								<img src="/static/img/section-7-1.png" alt="">
+							</div>
+							<img class="sticker --right --v-center" src="/static/img/mascote-3.svg" alt="">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- /6. Winners -->
+		<!-- 6. FAQ -->
+		<section class="section faq">
+			<div class="container">
+				<header class="section-header text-center">
+					<img class="sticker --v-center --right" src="/static/img/sticker-3.svg" alt="">
+					<p class="section-mark">Часто задаваемые вопросы</p>
+					<h2 class="section-title">Собрали всё, что может волновать</h2>
+				</header>
+				<div class="section-body">
+					<div class="faq-row flex">
+						<div class="faq-column">
+							<ul class="faq-list">
+								<li class="faq-item">
+									<details>
+										<summary>Как принять участие в розыгрыше?</summary>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, consequatur maxime qui est quia
+										illum ab, sit expedita voluptatibus similique officia possimus cupiditate quidem fuga vitae. Vero
+										neque ducimus officiis!
+									</details>
+								</li>
+								<li class="faq-item">
+									<details>
+										<summary>Какие призы участвуют в розыгрыше?</summary>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, consequatur maxime qui est quia
+										illum ab, sit expedita voluptatibus similique officia possimus cupiditate quidem fuga vitae. Vero
+										neque ducimus officiis!
+									</details>
+								</li>
+								<li class="faq-item">
+									<details>
+										<summary>Как принять участие в розыгрыше квартиры?</summary>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, consequatur maxime qui est quia
+										illum ab, sit expedita voluptatibus similique officia possimus cupiditate quidem fuga vitae. Vero
+										neque ducimus officiis!
+									</details>
+								</li>
+							</ul>
+						</div>
+						<div class="faq-column">
+							<ul class="faq-list">
+								<li class="faq-item">
+									<details>
+										<summary>Будут ли еще розыгрыши?</summary>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, consequatur maxime qui est quia
+										illum ab, sit expedita voluptatibus similique officia possimus cupiditate quidem fuga vitae. Vero
+										neque ducimus officiis!
+									</details>
+								</li>
+								<li class="faq-item">
+									<details>
+										<summary>Как проходит акция?</summary>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, consequatur maxime qui est quia
+										illum ab, sit expedita voluptatibus similique officia possimus cupiditate quidem fuga vitae. Vero
+										neque ducimus officiis!
+									</details>
+								</li>
+								<li class="faq-item">
+									<details>
+										<summary>Как будут разыгрываться призы?</summary>
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, consequatur maxime qui est quia
+										illum ab, sit expedita voluptatibus similique officia possimus cupiditate quidem fuga vitae. Vero
+										neque ducimus officiis!
+									</details>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<footer class="section-footer">
+					<div class="flex --center">
+						<div class="faq-column">
+							<a href="" class="button --middle">Больше вопросов</a>
+						</div>
+						<div class="faq-column">
+							<div class="card-buttons">
+								<a href="" class="btn --success">
+									<span>Задать свой вопрос</span>
+								</a>
+								<a href="" class="btn --success">
+									<b>?</b>
+								</a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</section>
+		<!-- /6. FAQ -->
+
+
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top flex">
+				<a href="" class="footer-logo">
+					<img src="/static/img/logo-footer.svg" alt="">
+				</a>
+
+				<div class="social">
+					<p>мы в социальных сетях:</p>
+					<ul class="social-list flex">
+						<li class="social-item">
+							<a href="">
+								vk
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="">
+								tg
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<img src="/static/img/sticker-4.svg" alt="">
+
+				<div class="qr">
+					<div class="flex">
+						<img src="/static/img/qr-footer.svg" alt="">
+
+						<div class="qr-info">
+							<span>загрузите чек за минуту</span>
+							<p>отсканируйте QR-код для перехода в чат-бот</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-center">
+				<p>Реклама. ООО «Синергетик», ИНН 5257123941. Erid: ( место для токена)</p>
+				<p>Общий срок акции с 01.06.2025 по 31.12.2025 включительно. Период совершения покупок: с 01.06.2024 по
+					30.06.2025. Информацию об организаторе акции, правилах ее проведения, количестве призов, сроках, месте и
+					порядке их получения смотрите по ссылке. В акции участвует не вся продукция под брендом SYNERGETIC. Полный
+					перечень товаров, участвующих в акции, смотрите в правилах акции по ссылке. Внешний вид товаров и призов может
+					отличаться от изображений в рекламных материалах.</p>
+			</div>
+
+			<div class="footer-end">
+				<div class="flex">
+					<div class="copy">
+						© 2025 ООО «Cинергетик»
+					</div>
+
+					<ul class="footer-nav flex">
+						<li>
+							<a href="">Правила акции</a>
+						</li>
+						<li>
+							<a href="">Политика конфиденциальности</a>
+						</li>
+						<li>
+							<a href="">Политика в отношении обработки персональных данных</a>
+						</li>
+					</ul>
+
+					<div class="web-studio">
+						<div class="flex">
+							<img src="/static/img/studio-logo.svg" alt="лого кстати agency">
+							<p>Сделано в <a href="" title="кстати agency">кстати agency</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 </body>
 
+<a class="top">
+	<img src="/static/img/top-arrow.svg" alt="">
+</a>
+
+
 <!-- MODALS -->
-<!-- Кнопки для открытия модальных окон -->
-<button data-open-modal="modal-1">Открыть модальное окно</button>
-<button data-open-modal="modal-2">Открыть модальное окно 2</button>
-
-
 <dialog class="modal" id="modal-1">
 	<button class="modal__close" data-close-modal>
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" />
-			<path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" />
+			<path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 		</svg>
 	</button>
 	<div class="modal__content">
@@ -75,10 +671,8 @@
 <dialog class="modal" id="modal-2">
 	<button class="modal__close" data-close-modal>
 		<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" />
-			<path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-				stroke-linejoin="round" />
+			<path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 		</svg>
 	</button>
 	<div class="modal__content">

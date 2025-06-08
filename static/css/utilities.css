@@ -1,1 +1,13 @@
-@layer utilities {}
+@layer utilities {
+    .text-center {
+        text-align: center;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex.--center {
+        justify-content: center;
+    }
+}

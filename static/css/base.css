@@ -99,7 +99,6 @@
         color: var(--body-color);
         background-color: var(--body-bg);
         padding: var(--spacing-base);
-        max-width: var(--container-max-width);
         margin: 0 auto;
         transition: var(--transition-slow)
     }
@@ -171,6 +170,7 @@
         color: var(--link-hover-color)
     }
 
+    /*
     a:not(nav a):before {
         content: '';
         position: absolute;
@@ -198,7 +198,7 @@
         text-decoration: none;
         vertical-align: super
     }
-
+*/
     small {
         font-size: .875rem;
         opacity: .85
@@ -225,8 +225,6 @@
         margin-bottom: var(--spacing-base);
         overflow-x: auto;
         background-color: rgba(0, 0, 0, .03);
-        border-radius: var(--border-radius-md);
-        box-shadow: var(--shadow-sm)
     }
 
     :root[color-scheme=dark] pre {
@@ -244,8 +242,6 @@
         margin-bottom: var(--spacing-base);
         font-style: italic;
         background-color: rgba(0, 0, 0, .02);
-        border-radius: 0 var(--border-radius) var(--border-radius) 0;
-        box-shadow: var(--shadow-sm)
     }
 
     :root[color-scheme=dark] blockquote {
@@ -342,7 +338,6 @@
         color: var(--body-color);
         margin-bottom: var(--spacing-base);
         transition: var(--transition-base);
-        box-shadow: var(--shadow-sm)
     }
 
     input:focus,
@@ -422,16 +417,13 @@
     button:hover,
     input[type=button]:hover,
     input[type=reset]:hover,
-    input[type=submit]:hover {
-        box-shadow: var(--shadow-md)
-    }
+    input[type=submit]:hover {}
 
     button:active,
     input[type=button]:active,
     input[type=reset]:active,
     input[type=submit]:active {
         transform: translateY(2px);
-        box-shadow: var(--shadow-sm)
     }
 
     button:disabled,
@@ -486,15 +478,9 @@
     img {
         max-width: 100%;
         height: auto;
-        border-radius: var(--border-radius-md);
-        transition: var(--transition-base);
-        box-shadow: var(--shadow)
     }
 
-    img:hover {
-        transform: scale(1.01);
-        box-shadow: var(--shadow-md)
-    }
+    img:hover {}
 
     figure {
         text-align: center;
@@ -506,7 +492,6 @@
         color: var(--secondary);
         text-align: center;
         margin-top: calc(var(--spacing-base) * .5);
-        font-style: italic
     }
 
     details summary {
@@ -535,17 +520,6 @@
     section {
         margin-bottom: calc(var(--spacing-base) * 2);
         padding: var(--spacing-base);
-        background-color: var(--card-bg);
-        border-radius: var(--border-radius-lg);
-        box-shadow: var(--shadow);
-        transition: var(--transition-base);
-        border: 1px solid var(--border-color)
-    }
-
-    article:hover,
-    aside:hover,
-    section:hover {
-        box-shadow: var(--shadow-md)
     }
 
     :focus-visible {
