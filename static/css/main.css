@@ -1,4 +1,4 @@
-@layer reset, animate, modal, fonts, base, theme, elements, sections, utilities;
+@layer reset, animate, modal, fonts, utilities, base, theme, elements, sections;
 
 
 @import url('./reset.css') layer(reset);

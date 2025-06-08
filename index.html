@@ -48,14 +48,14 @@
 
 	<!-- HEADER -->
 
-	<header class="header">
+	<header class="header animate__animated animate__fadeIn">
 		<div class="container">
-			<div class="header__inner">
+			<div class="header__inner flex --between --vcenter">
 				<a href="/" class="header__logo">
 					<img src="/static/img/logo.svg" alt="Synergetic">
 				</a>
 				<nav class="header__nav">
-					<ul class="header__nav-list">
+					<ul class="header__nav-list flex list-reset">
 						<li class="header__nav-item">
 							<a href="#how" class="header__nav-link">
 								<span>Как участвовать?</span>
@@ -109,22 +109,29 @@
 	<main class="main">
 		<!-- INTRO -->
 		<section class="intro" id="intro">
-			<img src="/static/img/intro.png" alt="Фон секции">
+			<img src="/static/img/intro.png" alt="Фон секции" class="intro-bg">
 			<div class="container">
 				<div class="intro-layout">
-
-					<img src="/static/img/airplane.png" alt="Самолёт">
+					<div class="intro-image  animate__animated animate__fadeInBottomLeft animate__slow">
+						<img src="/static/img/airplane.png" alt="Самолёт">
+					</div>
 					<h1 class="intro-title">
-						<span class="intro-title-top">Выйграй 300 000 ₽</span>
-						<span class="intro-title-bottom">на путешествие мечты</span>
+						<span class="intro-title-top  animate__animated animate__fadeInDown animate__faster">Выйграй 300 000
+							₽</span>
+						<span class="intro-title-bottom  animate__animated animate__fadeInUp animate__fast">на путешествие
+							мечты!</span>
 					</h1>
-					<p class="intro-text">Кондиционер — в корзину. Чек — в бот. Путешествие — за вами.</p>
-					<a href="/" class="button --large">
-						<span>Хочу в отпуск</span>
-						<b class="icon-airplane"></b>
-					</a>
+					<p class="intro-text animate__animated animate__fadeIn animate__delay-1s">Кондиционер — в корзину. Чек — в
+						бот. Путешествие — за
+						вами.</p>
+					<div class="intro-footer animate__animated animate__zoomInUp animate__delay-2s">
+						<a href="/" class="button --large">
+							<span>Хочу в отпуск</span>
+							<b class="icon-airplane"></b>
+						</a>
+					</div>
 				</div>
-				<img src="/static/img/mascote.svg" alt="">
+				<img src="/static/img/mascote.svg" alt="" class="intro-mascote animate__animated  animate__rotateIn">
 			</div>
 		</section>
 		<!-- /INTRO -->

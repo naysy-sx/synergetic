@@ -62,7 +62,7 @@
     }
 
     .container {
-        max-width: 1200px;
+        max-width: 1250px;
         margin-inline: auto;
         padding: 0 1rem;
     }
@@ -131,6 +131,12 @@
         background: no-repeat center/contain url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M2.5 19l1.5 1.5L10 14h4l4 4v3l4-4-4-4V9l-4 4h-4L4 3.5 2.5 5l4 6-4 6z"/></svg>');
     }
 
+    .card-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 
     .btn {
         display: inline-flex;
@@ -139,10 +145,15 @@
         line-height: 1.2;
         height: 48px;
         border-radius: 12px;
-        padding: 16px;
-        font-size: 16px;
+        padding: 20px;
+        font-size: 14px;
         font-weight: 500;
         color: var(--button-color-text);
+    }
+
+    .btn:has(b[class*='icon-squares']) {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .btn.--primary {
