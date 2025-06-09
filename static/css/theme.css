@@ -6,6 +6,7 @@
         --color-primary: #030306;
         --color-secondary: #03030680;
         --color-accent: rgb(176, 217, 52);
+        --color-accent-hover: rgb(190, 230, 69);
         --color-accent-light: rgba(176, 217, 52, 0.25);
         --color-border: rgba(239, 239, 239, 1);
         --button-color-gray: rgba(245, 245, 245, 1);
@@ -57,6 +58,18 @@
         font-size: 180px;
         font-size: clamp(4.375rem, -0.5357rem + 15.7143vw, 11.25rem);
         /* 180 до 69*/
+    }
+
+
+    @media (max-width: 600px) {
+        .intro-title-top {
+            font-size: 120px;
+        }
+
+        .intro-title-bottom {
+            font-size: 69px;
+        }
+
     }
 
     .theme h1,

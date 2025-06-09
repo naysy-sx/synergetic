@@ -54,7 +54,10 @@
 				<a href="/" class="header__logo">
 					<img src="/static/img/logo.svg" alt="Synergetic">
 				</a>
-				<nav class="header__nav">
+				<nav class="header__nav desktop">
+					<a class="close mobile">
+						<b class="icon-close"></b>
+					</a>
 					<ul class="header__nav-list flex list-reset">
 						<li class="header__nav-item">
 							<a href="#how" class="header__nav-link">
@@ -62,33 +65,33 @@
 							</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="/" class="header__nav-link">
+							<a href="#prizes" class="header__nav-link">
 								<span>Призы</span>
 							</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="/" class="header__nav-link">
+							<a href="#rules" class="header__nav-link">
 								<span>Правила акции</span>
 							</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="/" class="header__nav-link">
+							<a href="#buy" class="header__nav-link">
 								<span>Где купить?</span>
 							</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="/" class="header__nav-link">
+							<a href="#winners" class="header__nav-link">
 								<span>Победители</span>
 							</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="/" class="header__nav-link">
+							<a href="#faq" class="header__nav-link">
 								<span>Вопросы</span>
 							</a>
 						</li>
 					</ul>
 				</nav>
-				<div class="card-buttons">
+				<div class="card-buttons desktop">
 					<a href="" class="btn --primary">
 						<b class="icon-squares"></b>
 					</a>
@@ -96,6 +99,17 @@
 						<span>Загрузить чек</span>
 					</a>
 				</div>
+				<div class="mobile">
+					<div class="card-buttons">
+						<a href="" class="btn --success">
+							<b class="icon-squares"></b>
+						</a>
+						<a id="switch-menu" class="btn --success">
+							<span>Меню</span>
+						</a>
+					</div>
+				</div>
+
 
 			</div>
 		</div>
@@ -116,13 +130,15 @@
 						<img src="/static/img/airplane.png" alt="Самолёт">
 					</div>
 					<h1 class="intro-title">
-						<span class="intro-title-top  animate__animated animate__fadeInDown animate__faster">Выйграй 300 000
+						<span class="intro-title-top  animate__animated animate__fadeInDown animate__faster">Выйграй <br
+								class="mobile">300 000
 							₽</span>
 						<span class="intro-title-bottom  animate__animated animate__fadeInUp animate__fast">на путешествие
-							мечты!</span>
+							<br class="mobile">мечты!</span>
 					</h1>
-					<p class="intro-text animate__animated animate__fadeIn animate__delay-1s">Кондиционер — в корзину. Чек — в
-						бот. Путешествие — за
+					<p class="intro-text animate__animated animate__fadeIn animate__delay-1s">Кондиционер — в корзину. <br
+							class="mobile">Чек — в
+						бот. <br class="mobile">Путешествие — за
 						вами.</p>
 					<div class="intro-footer animate__animated animate__zoomInUp animate__delay-2s">
 						<a href="/" class="button --large">
@@ -138,7 +154,7 @@
 
 		<section class="decor text-center">
 			<!-- 2. HOW -->
-			<section class="section how">
+			<section class="section how" id="how">
 				<div class="container">
 					<header class="section-header">
 						<p class="section-mark">Как принять участие?</p>
@@ -234,7 +250,7 @@
 
 
 			<!-- 3. EMOTIONS -->
-			<section class="section emotions">
+			<section class="section emotions" id="buy">
 				<header class="section-header">
 					<img class="sticker --top --right" src="/static/img/sticker-1.svg" alt="">
 					<p class="section-mark">Покупай и выигрывай?</p>
@@ -376,7 +392,7 @@
 
 		</section>
 		<!-- 4. Main prize -->
-		<section class="section main-prize text-center">
+		<section class="section main-prize text-center" id="prizes">
 			<img src="/static/img/section-4-bg.png" alt="">
 			<div class="container">
 				<header class="section-header">
@@ -426,7 +442,7 @@
 		<!-- /5. also -->
 
 		<!-- 6. Winners -->
-		<section class="section winners text-center">
+		<section class="section winners text-center" id="winners">
 			<div class="container">
 				<header class="section-header">
 					<img class="sticker --top --right" src="/static/img/sticker-1.svg" alt="">
@@ -488,7 +504,7 @@
 		</section>
 		<!-- /6. Winners -->
 		<!-- 6. FAQ -->
-		<section class="section faq">
+		<section class="section faq" id="faq">
 			<div class="container">
 				<header class="section-header text-center">
 					<img class="sticker --v-center --right" src="/static/img/sticker-3.svg" alt="">

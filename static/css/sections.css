@@ -6,7 +6,11 @@
         left: 0;
         right: 0;
         z-index: 10;
+        background-color: transparent;
+        transition: background-color 0.3s;
     }
+
+
 
     .header__nav-list {
         gap: 32px;
@@ -14,14 +18,47 @@
         margin: 0;
     }
 
-    .header__nav-link {
+    @media (max-width: 1200px) {
+        .header__nav-list.flex {
+            flex-direction: column;
+            padding: 3rem 0;
+            gap: 1rem;
+            font-size: 16px;
+        }
+
+        .header__inner .close.mobile {
+            padding: 0rem 0;
+            font-size: 1.5rem;
+            float: right;
+            filter: brightness(2.5);
+            cursor: pointer;
+        }
+    }
+
+    .header__nav-list.flex .header__nav-link {
         color: var(--light);
+    }
+
+    @media (max-width: 1200px) {
+
+        .header__nav-list.flex .header__nav-link,
+        .page-scrolled .header .header__nav-list.flex .header__nav-link {
+            color: var(--light) !important;
+        }
     }
 
     .intro {
         position: relative;
         margin: 0;
         padding: 11.5rem 0 5rem;
+    }
+
+    @media (max-width: 1200px) {
+        .intro {
+            position: relative;
+            margin: 0;
+            padding: 5rem 0 0;
+        }
     }
 
     .intro .container {
@@ -46,6 +83,16 @@
         text-align: center;
     }
 
+    @media (max-width: 1200px) {
+        .intro-layout {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 1rem 0;
+        }
+    }
+
     .intro-image {
         position: relative;
         z-index: 1;
@@ -59,6 +106,13 @@
         transform: scale(1.35);
     }
 
+    @media (max-width: 1200px) {
+        .intro-image img {
+            transform: scale(2.3);
+            margin: -2rem 0 6rem -15rem;
+        }
+    }
+
     .intro-title {
         display: grid;
         grid-column: 1 / 2;
@@ -69,6 +123,12 @@
         background: transparent;
         text-fill-color: white;
         -webkit-text-fill-color: inherit;
+    }
+
+    @media (max-width: 1200px) {
+        .intro-title {
+            line-height: 0.9;
+        }
     }
 
     .intro-title-top {
@@ -86,14 +146,27 @@
         grid-row: 4 / 5;
         color: var(--color-light);
         font-size: 24px;
+    }
 
+    @media (max-width: 1200px) {
+        .intro-text {
+            font-size: 12px;
+            margin: 0;
+            margin-left: 46%;
+            margin-top: -50px;
+        }
     }
 
     .intro-footer {
         grid-column: 1 / 2;
         grid-row: 5 / 6;
         padding: 2.5rem 0;
+    }
 
+    @media (max-width: 1200px) {
+        .intro-footer {
+            padding: 2rem 0 1rem;
+        }
     }
 
     .intro-mascote {

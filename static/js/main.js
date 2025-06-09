@@ -208,6 +208,72 @@ $(document).ready(function () {
 			modalManager.open(modalId);
 		});
 	};
+
+	$('#switch-menu').on('click', function () {
+		$('.header__nav').toggleClass('is-active')
+	})
+	$('.close.mobile').on('click', function () {
+		$('.header__nav').toggleClass('is-active')
+	});
+
+	$(document).on('click', '.header__nav.desktop.is-active .header__nav-link', function () {
+		$('.header__nav').toggleClass('is-active');
+	});
+
+	$(document).on()
+
+
+	let lastScrollTop = 0;
+	const scrollThreshold = 50;
+
+	$(window).scroll(function () {
+		const currentScrollTop = $(this).scrollTop();
+		const $body = $('body');
+
+		// Класс "прокрутили от верха"
+		if (currentScrollTop > scrollThreshold) {
+			$body.addClass('page-scrolled');
+		} else {
+			$body.removeClass('page-scrolled');
+		}
+
+		// Направление скролла
+		if (currentScrollTop > lastScrollTop) {
+			$body.removeClass('scrolling-up').addClass('scrolling-down');
+		} else if (currentScrollTop < lastScrollTop) {
+			$body.removeClass('scrolling-down').addClass('scrolling-up');
+		}
+
+		// Убираем классы направления в начале страницы
+		if (currentScrollTop <= scrollThreshold) {
+			$body.removeClass('scrolling-up scrolling-down');
+		}
+
+		lastScrollTop = currentScrollTop;
+	});
+
+	const showButtonThreshold = 50;
+	const $topButton = $('.top');
+
+	$(window).scroll(function () {
+		const scrollTop = $(this).scrollTop();
+
+		if (scrollTop > showButtonThreshold) {
+			$topButton.addClass('visible');
+		} else {
+			$topButton.removeClass('visible');
+		}
+	});
+
+
+	$topButton.click(function (e) {
+		e.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: 0
+		}, 100); // 800ms - время анимации
+	});
+
 });
 
 // Пример использования:
