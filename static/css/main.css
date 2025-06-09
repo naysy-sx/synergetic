@@ -3,6 +3,7 @@
 
 @import url('./reset.css') layer(reset);
 @import url('./animate.min.css') layer(animate);
+@import url('../vendors/swiper-bundle.min.css') layer(swiper);
 @import url('./modal.css') layer(modal);
 @import url('../fonts/stylesheet.css') layer(fonts);
 @import url('./base.css') layer(base);

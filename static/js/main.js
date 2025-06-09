@@ -274,6 +274,42 @@ $(document).ready(function () {
 		}, 100); // 800ms - время анимации
 	});
 
+	const products = new Swiper('.products-slider', {
+		loop: true,
+		slidesPerView: 1,
+		spaceBetween: 15,
+		centeredSlides: true,
+		loopedSlidesLimit: false,
+		watchSlidesProgress: true,
+		observer: true,
+		observeParents: true,
+		breakpoints: {
+			768: {
+				loop: true,
+				slidesPerView: 3,
+				spaceBetween: 20,
+				centeredSlides: true,
+				loopedSlidesLimit: false,
+				watchSlidesProgress: true,
+				observer: true,
+				observeParents: true,
+			},
+			// >= 1200px
+			1200: {
+				loop: true,
+				slidesPerView: 5,
+				spaceBetween: 30,
+				centeredSlides: true,
+				loopedSlidesLimit: false,
+				watchSlidesProgress: true,
+				observer: true,
+				observeParents: true,
+			}
+		}
+	});
+
+
+
 });
 
 // Пример использования:

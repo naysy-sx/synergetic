@@ -35,6 +35,7 @@
 	<!-- Скрипты -->
 	<script src="/static/vendors/jquery-3.7.1.min.js"></script>
 	<script src="/static/vendors/imask.js"></script>
+	<script src="/static/vendors/swiper-bundle.min.js"></script>
 
 	<!-- Предзагрузка критичных ресурсов -->
 	<link rel="preload" href="/fonts/main-font.woff2" as="font" type="font/woff2" crossorigin>
@@ -172,7 +173,7 @@
 											</span>
 											<figcaption>
 												<h3>Покупайте кондиционер</h3>
-												<p>Aroma Emotions — в любом магазине, онлайн или офлайн </p>
+												<p>Aroma Emotions — в любом <br class="desktop">магазине, онлайн или офлайн </p>
 											</figcaption>
 										</figure>
 									</a>
@@ -195,7 +196,7 @@
 											</span>
 											<figcaption>
 												<h3>Загружайте чек</h3>
-												<p>в наш чат-бот — быстро, удобно, за 30 секунд</p>
+												<p>в наш чат-бот — быстро, <br class="desktop">удобно, за 30 секунд</p>
 											</figcaption>
 										</figure>
 									</a>
@@ -218,7 +219,7 @@
 											</span>
 											<figcaption>
 												<h3>Выигрывайте призы</h3>
-												<p>Эмоции не ждут: разыгрываем подарки каждый месяц</p>
+												<p>Эмоции не ждут: разыгрываем <br class="desktop">подарки каждый месяц</p>
 											</figcaption>
 										</figure>
 									</a>
@@ -261,9 +262,10 @@
 				</header>
 
 				<div class="section-body">
-					<div class="products-slider">
-						<ul class="products flex">
-							<li class="products-item">
+					<div class="products-slider swiper">
+						<div class="products swiper-wrapper">
+							<!-- Slides -->
+							<div class="products-item swiper-slide">
 								<div class="card">
 									<a href="" class="card-link">
 										<figure class="card-image">
@@ -286,8 +288,8 @@
 										</a>
 									</div>
 								</div>
-							</li>
-							<li class="products-item">
+							</div>
+							<div class="products-item swiper-slide">
 								<div class="card">
 									<a href="" class="card-link">
 										<figure class="card-image">
@@ -310,8 +312,8 @@
 										</a>
 									</div>
 								</div>
-							</li>
-							<li class="products-item">
+							</div>
+							<div class="products-item swiper-slide">
 								<div class="card">
 									<a href="" class="card-link">
 										<figure class="card-image">
@@ -334,8 +336,8 @@
 										</a>
 									</div>
 								</div>
-							</li>
-							<li class="products-item">
+							</div>
+							<div class="products-item swiper-slide">
 								<div class="card">
 									<a href="" class="card-link">
 										<figure class="card-image">
@@ -358,8 +360,8 @@
 										</a>
 									</div>
 								</div>
-							</li>
-							<li class="products-item">
+							</div>
+							<div class="products-item swiper-slide">
 								<div class="card">
 									<a href="" class="card-link">
 										<figure class="card-image">
@@ -382,8 +384,134 @@
 										</a>
 									</div>
 								</div>
-							</li>
-						</ul>
+							</div>
+
+							<div class="products-item swiper-slide">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-1.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Италия</small>
+												<h3>Cherry</h3>
+												<p>Спелая вишня / Сандал / Ваниль</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="products-item swiper-slide">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-2.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Куба</small>
+												<h3>Tobacco Vanille</h3>
+												<p>Ваниль / Листья табака / Бергамот</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="products-item swiper-slide">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-3.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Япония</small>
+												<h3>Pear & Jasmine</h3>
+												<p>Цветущий миндаль / Груша / Жасмин</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="products-item swiper-slide">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-4.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Мальдивы</small>
+												<h3>Sea Kiss</h3>
+												<p>Мята / Иланг-иланг / Малина</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="products-item swiper-slide">
+								<div class="card">
+									<a href="" class="card-link">
+										<figure class="card-image">
+											<span>
+												<img src="static/img/section-3-5.png" alt="">
+											</span>
+											<figcaption>
+												<small class="card-tag">Мальдивы</small>
+												<h3>Flower Delight</h3>
+												<p>Фрезия / Палисандр / Бергамот</p>
+											</figcaption>
+										</figure>
+									</a>
+									<div class="card-buttons --hidden">
+										<a href="" class="btn --gray">
+											<img src="/static/img/ozon-logo.svg" alt="">
+										</a>
+										<a href="" class="btn --gray">
+											<img src="/static/img/wilberries-logo.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- /slides -->
+
+
+						</div>
 					</div>
 				</div>
 
